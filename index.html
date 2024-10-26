@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draggable Web con Matter.js y GSAP</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    </div>
+    <div class="contenedores">
+        <div class="contenedor-superior">
+            <div class="contenedor-izquierdo" id="ct-arb">
+                <div class="contendor-soltar" id="soltar-arb"></div>
+            </div>
+        </div>
+        <div id="separador-vertical">
+            <div class="int-separador-v">▼▲</div>
+        </div>
+        <div class="contenedores-inferiores">
+            <div class="contenedor-izquierdo" id="ct-izq">
+                <div class="contendor-soltar" id="soltar-izq"></div>
+            </div>
+            <div id="separador">
+                <div class="int-separador-h">◀<br>▶</div>
+            </div> <!-- Nuevo div separador -->
+            <div class="contenedor-izquierdo" id="ct-drc">
+                <div class="contendor-soltar" id="soltar-drc"></div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div id="contenedor-derecho"></div>
+    <div class="draggable-mut" id="draggable1" style="left: 1px;">
+        <div class="circle">ABOUT</div>
+
+    </div>
+    <div class="draggable-mut" id="draggable2" style="left: 1.5px;">
+        <div class="contenido-prj">
+            <img src="delta_foto.jpg">
+
+            <video loop autoplay muted>
+                <source src="POST 1 LOGO.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta de video.
+            </video>
+            <img src="DELTA_TABLAS_web.png">
+        </div>
+    </div>
+    <div class="draggable-mut" id="draggable3" style="left: 2px;">
+        <div class="cmyk-container base">
+            <div class="texto">Soy Manel Vila, diseñador gráfico graduado por la EASD (Escuela Arte Superior de
+                Valencia).
+                Durante los tres últimos años he estado trabajando como freelance, con proyectos como los
+                que veréis a continuación. Además, he colaborado durante un año con Jotateam Studio.
+                Trabajo con comodidad en cualquier rama del diseño gráfico, pero me he especializado
+                principalmente en brandig y lettering.
+                Me considero una persona implicada y con capacidad a trabajo en equipo y bajo presión.</div>
+            <div class="naranja tamaño-completo">
+                <div class="cmyk-container circle">
+
+                    <div class="azul1 tamaño-completo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="draggable-mut" id="draggable4">
+        <div class="caja-nota">
+            <textarea class="nota" placeholder="Escribe aquí..."></textarea>
+            <button class="guardar">Guardar Nota</button>
+        </div>
+        <div class="cmyk-container base">
+
+            <div class="verde tamaño-completo"></div>
+        </div>
+    </div>
+    <div class="draggable-mut" id="draggable5">SERVICES</div>
+
+    <div class="regla regla-vertical regla-izquierda" id="regla-izquierda"></div>
+    <div class="regla regla-vertical regla-derecha" id="regla-derecha"></div>
+
+    <!-- Reglas horizontales -->
+    <div class="regla regla-horizontal regla-superior" id="regla-superior"></div>
+    <div class="regla regla-horizontal regla-inferior" id="regla-inferior"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+    <script src="matter.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
